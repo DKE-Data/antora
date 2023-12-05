@@ -494,7 +494,7 @@ function computeOut (src, family, version, htmlUrlExtensionStyle) {
   }
 
   const modulePath = path.join(component, version, module_)
-  const dirname = path.join(modulePath, familyPathSegment, path.dirname(relative), indexifyPathSegment)
+  const dirname = path.join(/*modulePath,*/ familyPathSegment, path.dirname(relative), indexifyPathSegment)
   const path_ = path.join(dirname, basename)
   const moduleRootPath = path.relative(dirname, modulePath) || '.'
   const rootPath = path.relative(dirname, '') || '.'
